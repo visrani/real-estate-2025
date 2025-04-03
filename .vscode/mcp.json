@@ -1,0 +1,19 @@
+
+{
+    "servers": {
+        "github": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_TOKEN}"
+            }
+        },
+        "my-mcp-server-bf4c043d": {
+            "type": "sse",
+            "url": "https://mcp.pipedream.net/e81ccedc-d622-4adb-88e8-489b56296083/domain_group"
+        },
+    }
+}
